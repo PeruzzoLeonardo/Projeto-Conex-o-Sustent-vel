@@ -1,0 +1,98 @@
+:root {
+    --primary: #00a86b;
+    --dark: #1a3c34;
+    --light: #f8fff9;
+}
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: var(--light);
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('recicle.jpg');
+    background-size: cover;       /* Preenche toda a área sem distorcer */
+    background-position: center;  /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    color: rgb(247, 246, 246);
+    text-align: center;
+    padding: 110px 40px;
+}
+h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    padding: 0 20px;
+}
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.section {
+    margin: 20px 0;
+    padding: 40px;
+    background: var(--light);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    font-size: 1.1rem;
+}
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+.card {
+    background: #f8fff9;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 5px solid var(--primary);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.icon {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+.btn {
+    background: var(--primary);
+    color: white;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: #008c59;
+    transform: scale(1.05);
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+.ul li {
+    padding: 10px 0;
+    position: relative;
+    padding-left: 30px;
+}
+.ul li:before {
+    content: "✓";
+    color: var(--primary);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
