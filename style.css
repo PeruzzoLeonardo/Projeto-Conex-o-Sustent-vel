@@ -13,13 +13,13 @@ body {
 header {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('recicle.jpg');
     background-size: cover;       /* Preenche toda a área sem distorcer */
-    background-position: center;  /* Centraliza a imagem */
+    background-position: center center;  /* Centra imagem */
     background-repeat: no-repeat; /* Não repete a imagem */
     color: rgb(247, 246, 246);
     text-align: center;
     padding: 110px 40px;
 }
-h1 {
+h1 {    
     font-size: 3rem;
     margin-bottom: 15px;
     padding: 0 20px;
@@ -95,4 +95,14 @@ ul {
     font-weight: bold;
     position: absolute;
     left: 0;
+}
+@media (max-width: 600px) {
+    header {
+        padding: 60px 20px; /* Reduz o tamanho do header */
+        background-position: center;
+        background-size: cover; 
+    }
+    h1 {
+        font-size: 1.8rem; /* Diminui o texto para caber melhor */
+    }
 }
